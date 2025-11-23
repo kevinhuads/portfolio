@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kevin Hua – Data Science & MLOps Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Kevin Hua, Senior Data Scientist – deep learning, MLOps, classical machine learning and interactive data science."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">KH</span>
+        <span class="logo-text">Kevin Hua</span>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#featured">Flagship</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">Senior Data Scientist</p>
+          <h1>End-to-end machine learning and MLOps.</h1>
+          <p class="hero-subtitle">
+            Experience with modern deep learning, classical machine learning, experiment
+            design and production-oriented workflows, from exploration to deployment.
+          </p>
+
+          <div class="hero-links">
+            <a class="btn primary"
+               href="https://github.com/kevinhuads"
+               target="_blank" rel="noopener noreferrer">
+              GitHub profile
+            </a>
+            <a class="btn secondary"
+               href="https://kevinhua.shinyapps.io/DS_viz/"
+               target="_blank" rel="noopener noreferrer">
+              R Shiny data science lab
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <a href="https://www.linkedin.com/in/huakevin"
+               target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+            <span class="dot">•</span>
+            <a href="mailto:kevin.huads+portfolio@example.com">
+              Email
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-highlight">
+          <div class="highlight-card">
+            <h2>Current focus</h2>
+            <ul>
+              <li>Deep learning for computer vision (Food-101)</li>
+              <li>MLflow, Docker, CI/CD for ML systems</li>
+              <li>Model reliability and calibration</li>
+              <li>Interactive analytics with Shiny and Streamlit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <h2>About</h2>
+          <p>
+            Senior Data Scientist with experience spanning exploratory analysis, model design
+            and implementation, and the operational aspects of machine learning systems.
+          </p>
+          <p>
+            Work covers deep learning for computer vision, classical supervised learning on
+            tabular data, and interactive applications for explaining models and concepts.
+            Particular emphasis is placed on reproducibility, robust evaluation and
+            maintainable code.
+          </p>
+        </div>
+        <div class="about-aside">
+          <h3>Domains and tools</h3>
+          <ul>
+            <li>Computer vision – classification on real-world image datasets</li>
+            <li>Customer analytics and product usage modelling</li>
+            <li>Time series, optimisation and stochastic simulation</li>
+            <li>Python (PyTorch, scikit-learn, pandas), R (tidyverse, Shiny)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flagship project -->
+    <section id="featured" class="section section-accent">
+      <div class="container">
+        <h2>Flagship project</h2>
+        <div class="project-grid">
+          <article class="project-card featured-card">
+            <div class="project-tag">Deep learning · MLOps</div>
+            <h3>End-to-end deep learning – computer vision workflow</h3>
+            <p class="project-meta">
+              Multi-class image classification on the Food-101 dataset, from exploratory
+              analysis to deployment, with a production-oriented structure.
+            </p>
+            <ul class="project-points">
+              <li>
+                Systematic benchmark of modern CNN and transformer architectures
+                under frozen and fine-tuning regimes.
+              </li>
+              <li>
+                Training engine with mixed precision, OneCycleLR and detailed metrics,
+                including calibration and per-class diagnostics.
+              </li>
+              <li>
+                Experiment tracking with MLflow and structured artifacts
+                (checkpoints, CSV logs, diagnostic plots).
+              </li>
+              <li>
+                Streamlit application for inference, packaged with Docker and deployed
+                via GitHub Actions CI/CD.
+              </li>
+              <li>
+                Extensive test suite covering data pipeline, metrics, CLIs and a
+                synthetic end-to-end training run.
+              </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/kevinhuads/deepvision-workflow"
+                 target="_blank" rel="noopener noreferrer">
+                View repository
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected projects</h2>
+        <div class="project-grid">
+          <!-- R Shiny lab -->
+          <article class="project-card">
+            <div class="project-tag">R Shiny · Education</div>
+            <h3>Interactive data science visual lab (R Shiny)</h3>
+            <p class="project-meta">
+              Interactive Shiny application organised as an “interactive blog” that
+              illustrates core data science and applied mathematics topics.
+            </p>
+            <ul class="project-points">
+              <li>
+                Covers clustering, regression, NLP, time series, hypothesis testing,
+                optimisation, Monte Carlo methods, Markov chains and SIRD models.
+              </li>
+              <li>
+                Combines narrative explanations, hands-on controls and visual
+                diagnostics to build intuition.
+              </li>
+              <li>
+                Structured as a full Shiny application with separate data preparation
+                scripts and modular UI components.
+              </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/kevinhuads/rshiny-datascience-viz-lab"
+                 target="_blank" rel="noopener noreferrer">
+                View repository
+              </a>
+              <span class="dot">•</span>
+              <a href="https://kevinhua.shinyapps.io/DS_viz/"
+                 target="_blank" rel="noopener noreferrer">
+                Live demo
+              </a>
+            </div>
+          </article>
+
+          <!-- Kaggle 1 -->
+          <article class="project-card">
+            <div class="project-tag">Tabular ML · Classification</div>
+            <h3>Bank term-deposit classification</h3>
+            <p class="project-meta">
+              End-to-end workflow for a Kaggle bank marketing dataset, predicting
+              whether a customer subscribes to a term deposit.
+            </p>
+            <ul class="project-points">
+              <li>
+                Extensive EDA and feature engineering based on campaign, demographic
+                and behavioural information.
+              </li>
+              <li>
+                Stratified cross-validation and comparison of several classifier families.
+              </li>
+              <li>
+                Model interpretation with SHAP and analysis of feature importance
+                across folds.
+              </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/kevinhuads/classification-bank-deposit"
+                 target="_blank" rel="noopener noreferrer">
+                View repository
+              </a>
+            </div>
+          </article>
+
+          <!-- Kaggle 2 -->
+          <article class="project-card">
+            <div class="project-tag">Tabular ML · Regression</div>
+            <h3>Podcast listening time regression</h3>
+            <p class="project-meta">
+              Regression pipeline for predicting podcast listening time from episode and
+              show metadata on a Kaggle dataset.
+            </p>
+            <ul class="project-points">
+              <li>
+                K-fold validation and compact model ensembles for robust performance.
+              </li>
+              <li>
+                Detailed diagnostics, including residual analysis and calibration checks.
+              </li>
+              <li>
+                Global and local interpretability with SHAP for business-oriented insights.
+              </li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/kevinhuads/regression-podcast-time"
+                 target="_blank" rel="noopener noreferrer">
+                View repository
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-accent">
+      <div class="container">
+        <h2>Technical profile</h2>
+        <div class="skills-grid">
+          <div class="skills-column">
+            <h3>Machine learning</h3>
+            <ul>
+              <li>Deep learning with PyTorch</li>
+              <li>Classical ML with scikit-learn</li>
+              <li>Model evaluation, calibration and error analysis</li>
+              <li>Feature engineering and cross-validation strategies</li>
+            </ul>
+          </div>
+          <div class="skills-column">
+            <h3>MLOps and tooling</h3>
+            <ul>
+              <li>MLflow for experiment tracking and model registry</li>
+              <li>Docker and Docker Compose</li>
+              <li>GitHub Actions CI for tests and image builds</li>
+              <li>Reproducible environments and dependency management</li>
+            </ul>
+          </div>
+          <div class="skills-column">
+            <h3>Languages and visualisation</h3>
+            <ul>
+              <li>Python (pandas, NumPy, Matplotlib, Plotly)</li>
+              <li>R (tidyverse, Shiny)</li>
+              <li>Streamlit applications for model introspection</li>
+              <li>Interactive dashboards and teaching-oriented visuals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>
+          For collaboration or opportunities involving applied machine learning, deep learning
+          for vision, or MLOps for data science teams, the following channels are available.
+        </p>
+        <ul class="contact-list">
+          <li>
+            GitHub:
+            <a href="https://github.com/kevinhuads" target="_blank" rel="noopener noreferrer">
+              github.com/kevinhuads
+            </a>
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/huakevin"
+               target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/huakevin
+            </a>
+          </li>
+          <li>
+            R Shiny lab:
+            <a href="https://kevinhua.shinyapps.io/DS_viz/"
+               target="_blank" rel="noopener noreferrer">
+              kevinhua.shinyapps.io/DS_viz
+            </a>
+          </li>
+          <li>
+            Email:
+            <a href="mailto:kevin.huads+portfolio@example.com">
+              kevin.huads+portfolio@example.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Kevin Hua</p>
+      <p class="footer-meta">
+        Data Science · Machine Learning · MLOps
+      </p>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
